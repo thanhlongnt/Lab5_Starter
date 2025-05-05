@@ -9,3 +9,22 @@ import {
 } from '../code-to-unit-test/unit-test-me';
 
 // TODO - Part 2
+
+// isPhoneNumber
+
+
+
+// isEmail
+
+
+
+// isStrongPassword
+
+
+
+// isDate
+
+
+
+// isHexColor
+
