@@ -1,4 +1,5 @@
 // expose.js
+const jsConfetti = new JSConfetti();
 
 // selecting a horn
 
@@ -48,6 +49,18 @@ function selectVolume() {
 }
 
 // play sound when button is clicked
+function playSound() {
+  const hornSelect = document.getElementById("horn-select");
+  const hornAudio = document.querySelector("audio");
+  const playButton = document.querySelector("button");
+  
+  playButton.addEventListener("click", function () {
+    if (hornSelect.value === "party-horn") {
+      jsConfetti.addConfetti();
+    }
+    hornAudio.play();
+  }, false);
+}
 
 
 window.addEventListener('DOMContentLoaded', init);
@@ -55,4 +68,5 @@ window.addEventListener('DOMContentLoaded', init);
 function init() {
   selectHorn();
   selectVolume();
+  playSound();
 }
