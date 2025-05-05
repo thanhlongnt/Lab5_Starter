@@ -34,10 +34,6 @@ function selectVolume() {
   });
 }
 
-
-
-
-
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
