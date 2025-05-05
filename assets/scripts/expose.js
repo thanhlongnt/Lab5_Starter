@@ -30,7 +30,11 @@ function selectVolume() {
   document.getElementById('volume').addEventListener("input", function () {
     const volumeSlider = document.getElementById('volume')
     const volumeImg = document.querySelector("#volume-controls img");
+    const audio = document.querySelector("#expose audio");
+
     console.log(volumeSlider.value);
+    audio.volume = volumeSlider.value / 100
+    console.log(audio.volume)
     
     if (volumeSlider.value == 0) {
       volumeImg.src = "assets/icons/volume-level-0.svg";
@@ -44,6 +48,7 @@ function selectVolume() {
     else {
       volumeImg.src = "assets/icons/volume-level-3.svg";
     }
+    
   }, false);
 }
 
