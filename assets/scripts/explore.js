@@ -41,7 +41,6 @@ function selectVoice() {
 
 // push to talk
 // use api to text to speech
-const synth = window.speechSynthesis;
 function pushToTalk() {
   document.querySelector("button").addEventListener("click", function () {
       const text = document.getElementById("text-to-speak").value;
