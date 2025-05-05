@@ -3,7 +3,7 @@
 // selecting a horn
 
 function selectHorn() {
-  document.getElementById("horn-select").addEventListener("input", function (event) {
+  document.getElementById("horn-select").addEventListener("input", function () {
     const hornSelect = document.getElementById("horn-select");
     const hornImage = document.querySelector("img");
     const hornAudio = document.querySelector("audio");
